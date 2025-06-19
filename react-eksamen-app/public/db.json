@@ -17,6 +17,15 @@
       "numberOfQuestions": 10,
       "examDurationMinutes": 14,
       "startTime": "11:00"
+    },
+    {
+      "id": "ec95",
+      "examtermin": "fefter år 25 ",
+      "courseName": "Frontend",
+      "date": "2025-06-20",
+      "numberOfQuestions": 10,
+      "examDurationMinutes": 15,
+      "startTime": "09:00"
     }
   ],
   "students": [

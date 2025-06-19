@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import type { Exam, Student } from "../types/data";
+import type { Exam } from "../interface/Exam";
+import type { Student } from "../interface/Student";
 import { fetchAllData, updateStudent } from "../api/examApi";
 import styles from "../styles/StartEksamenPage.module.css";
 
@@ -46,10 +47,26 @@ const StartEksamenPage = () => {
 			if (!examId) return;
 			setIsLoading(true);
 			const { exams, students } = await fetchAllData();
-			const currentExam = exams.find((e) => e.id === examId);
-			const examStudents = students
-				.filter((s) => s.examId === examId)
-				.sort((a, b) => a.order - b.order);
+			const currentExam: Exam | undefined = exams.find(
+				(e: Exam) => e.id === examId
+			);
+			interface ExamStudent extends Student {
+				examId: string;
+				order: number;
+			}
+			interface ExamStudent extends Student {
+				examId: string;
+				order: number;
+			}
+
+			const examStudents: ExamStudent[] = students
+				.filter(
+					(s: Student): s is ExamStudent =>
+						typeof s.examId === "string" &&
+						typeof s.order === "number" &&
+						s.examId === examId
+				)
+				.sort((a: ExamStudent, b: ExamStudent) => a.order - b.order);
 
 			if (currentExam && examStudents.length > 0) {
 				setExam(currentExam);

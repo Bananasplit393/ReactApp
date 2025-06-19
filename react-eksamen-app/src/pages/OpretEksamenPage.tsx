@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import type { Exam } from "../types/data";
+import type { Exam } from "../interface/Exam";
 import styles from "../styles/OpretEksamensPage.module.css";
 import { useNavigate } from "react-router-dom";
 import { saveExam } from "../api/examApi"; // NY IMPORT

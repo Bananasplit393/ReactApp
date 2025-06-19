@@ -1,12 +1,9 @@
-import type { Exam, Student } from "../types/data";
+import type { Exam } from "../interface/Exam";
+import type { Student } from "../interface/Student";
+import type { DbData } from "../interface/DbData";
 
 // Sæt den korrekte URL til din json-server
 const API_BASE_URL = "http://localhost:3001";
-
-interface DbData {
-	exams: Exam[];
-	students: Student[];
-}
 
 export const fetchAllData = async (): Promise<DbData> => {
 	try {

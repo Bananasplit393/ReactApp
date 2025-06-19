@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
-import type { Exam, Student } from "../types/data";
+import type { Exam } from "../interface/Exam";
+import type { Student } from "../interface/Student";
 import { fetchAllData } from "../api/examApi";
 import styles from "../styles/HistorikPage.module.css";
 

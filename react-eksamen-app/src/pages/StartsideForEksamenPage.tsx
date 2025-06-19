@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import type { Exam } from "../types/data";
+import type { Exam } from "../interface/Exam";
 import { fetchAllData } from "../api/examApi";
 import styles from "../styles/StartsideForEksamenPage.module.css";
 
