@@ -1,0 +1,64 @@
+{
+  "exams": [
+    {
+      "id": "1",
+      "examtermin": "sommer 25",
+      "courseName": "Introduktion til Programmering",
+      "date": "2025-06-25",
+      "numberOfQuestions": 10,
+      "examDurationMinutes": 15,
+      "startTime": "09:00"
+    },
+    {
+      "id": "4358",
+      "examtermin": "Sommer 25",
+      "courseName": "FEDD",
+      "date": "2025-06-21",
+      "numberOfQuestions": 10,
+      "examDurationMinutes": 14,
+      "startTime": "11:00"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "examId": "1",
+      "studentNo": "123456",
+      "fullName": "Alice Andersen",
+      "order": 1,
+      "questionNo": 5,
+      "actualExamDurationMinutes": 14,
+      "notes": "Svarer rigtig godt på spørgsmålet, men har dog en fejl i koden.",
+      "grade": "10"
+    },
+    {
+      "id": "2",
+      "examId": "1",
+      "studentNo": "654321",
+      "fullName": "Bob Baker",
+      "order": 2,
+      "questionNo": 8,
+      "actualExamDurationMinutes": 16,
+      "notes": "God redegørelse med kun ubetydelige mangler.",
+      "grade": "12"
+    },
+    {
+      "id": "5fb9",
+      "examId": "1",
+      "studentNo": "24522",
+      "fullName": "Chiwahithw whiwg",
+      "order": 3
+    },
+    {
+      "id": "76ae",
+      "examId": "4358",
+      "studentNo": "234578",
+      "fullName": "Holger ",
+      "order": 1,
+      "questionNo": 6,
+      "actualExamDurationMinutes": 0,
+      "notes": "asdfas fdf s\nasdf\n fsdf\ns\ndfs",
+      "grade": "12"
+    }
+  ]
+}

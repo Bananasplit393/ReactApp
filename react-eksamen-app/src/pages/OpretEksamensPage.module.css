@@ -1,0 +1,47 @@
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+}
+
+.formGroup label {
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	color: #333;
+}
+
+.formGroup input {
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.submitButton {
+	padding: 0.8rem 1.5rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	justify-self: start; /* Placerer knappen i starten af grid-cellen */
+}
+
+.submitButton:hover {
+	background-color: #0056b3;
+}

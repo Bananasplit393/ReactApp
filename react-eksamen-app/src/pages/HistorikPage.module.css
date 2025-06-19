@@ -1,0 +1,81 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.selectionArea {
+	background-color: #f0f8ff;
+	padding: 1.5rem;
+	border-radius: 8px;
+}
+
+.examSelect {
+	width: 100%;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.detailsArea {
+	background-color: #ffffff;
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.studentTable {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+.studentTable th,
+.studentTable td {
+	border: 1px solid #ddd;
+	padding: 0.75rem;
+	text-align: left;
+}
+
+.studentTable th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+.studentTable tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.notesCell {
+	max-width: 300px;
+	white-space: pre-wrap; /* Gør at linjeskift i noter vises korrekt */
+	word-wrap: break-word;
+}
+
+.examList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.examList li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.75rem;
+	border-bottom: 1px solid #eee;
+}
+
+.startLink {
+	background-color: #28a745;
+	color: white;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	border-radius: 4px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+.startLink:hover {
+	background-color: #218838;
+}
