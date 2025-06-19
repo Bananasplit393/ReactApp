@@ -1,7 +1,7 @@
+/* src/App.css */
 #root {
-	max-width: 2280px;
-	margin: 0 auto;
-	padding: 2rem;
+	/* Egenskaberne max-width, margin og padding er blevet fjernet 
+	   for at lade headeren fylde hele skærmens bredde. */
 	text-align: center;
 }
 

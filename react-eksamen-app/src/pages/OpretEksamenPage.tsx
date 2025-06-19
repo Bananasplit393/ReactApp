@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import type { Exam } from "../interface/Exam";
 import styles from "../styles/OpretEksamensPage.module.css";
 import { useNavigate } from "react-router-dom";
-import { saveExam } from "../api/examApi"; // NY IMPORT
+import { saveExam } from "../api/examApi";
+import Button from "../components/Button/Button"; // <-- NY IMPORT
 
-// Vi definerer en starttilstand for vores formular
 const initialState: Omit<Exam, "id"> = {
 	examtermin: "",
 	courseName: "",
@@ -36,12 +36,9 @@ const OpretEksamenPage = () => {
 		}
 
 		try {
-			// Kald API'et for at gemme den nye eksamen
 			const newExam = await saveExam(formData);
 			console.log("Ny eksamen oprettet:", newExam);
 			alert(`Eksamen '${newExam.courseName}' er oprettet!`);
-
-			// Send brugeren videre for at tilføje studerende
 			navigate("/tilfoj-studerende");
 		} catch (error) {
 			console.error("Failed to save exam:", error);
@@ -53,7 +50,6 @@ const OpretEksamenPage = () => {
 		<div className={styles.container}>
 			<h1>Opret Ny Eksamen</h1>
 			<form onSubmit={handleSubmit} className={styles.form}>
-				{/* ... resten af din JSX form er uændret ... */}
 				<div className={styles.formGroup}>
 					<label htmlFor="courseName">Kursusnavn</label>
 					<input
@@ -126,10 +122,9 @@ const OpretEksamenPage = () => {
 						min="5"
 					/>
 				</div>
-
-				<button type="submit" className={styles.submitButton}>
+				<Button type="submit" className={styles.opretButton}>
 					Opret Eksamen
-				</button>
+				</Button>
 			</form>
 		</div>
 	);

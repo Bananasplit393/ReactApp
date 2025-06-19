@@ -35,10 +35,10 @@
       "studentNo": "123456",
       "fullName": "Alice Andersen",
       "order": 1,
-      "questionNo": 5,
-      "actualExamDurationMinutes": 14,
-      "notes": "Svarer rigtig godt på spørgsmålet, men har dog en fejl i koden.",
-      "grade": "10"
+      "questionNo": 1,
+      "actualExamDurationMinutes": 0,
+      "notes": "",
+      "grade": "12"
     },
     {
       "id": "2",

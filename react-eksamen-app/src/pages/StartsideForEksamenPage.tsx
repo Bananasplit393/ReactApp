@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import type { Exam } from "../interface/Exam";
 import { fetchAllData } from "../api/examApi";
 import styles from "../styles/StartsideForEksamenPage.module.css";
+import Button from "../components/Button/Button"; // <-- IMPORT AF BUTTON
 
 const StartsideForEksamenPage = () => {
 	const [exams, setExams] = useState<Exam[]>([]);
@@ -37,9 +38,13 @@ const StartsideForEksamenPage = () => {
 									{exam.examtermin} - {new Date(exam.date).toLocaleDateString()}
 								</span>
 							</div>
-							<Link to={`/eksamen/${exam.id}`} className={styles.startButton}>
+							<Button
+								as={Link}
+								to={`/eksamen/${exam.id}`}
+								className={styles.startButton}
+							>
 								Start Eksamen
-							</Link>
+							</Button>
 						</li>
 					))}
 				</ul>
