@@ -1,5 +1,5 @@
 import { Routes, Route, Link } from "react-router-dom";
-import styles from "./App.module.css";
+import styles from "./styles/App.module.css";
 import HistorikPage from "./pages/HistorikPage";
 import StartEksamenPage from "./pages/StartEksamenPage";
 import OpretEksamenPage from "./pages/OpretEksamenPage";
