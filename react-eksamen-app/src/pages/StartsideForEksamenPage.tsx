@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import type { Exam } from "../types/data";
 import { fetchAllData } from "../api/examApi";
-import styles from "./StartsideForEksamenPage.module.css";
+import styles from "../styles/StartsideForEksamenPage.module.css";
 
 const StartsideForEksamenPage = () => {
 	const [exams, setExams] = useState<Exam[]>([]);

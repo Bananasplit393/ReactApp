@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import type { Exam, Student } from "../types/data";
 import { fetchAllData, saveStudent } from "../api/examApi";
-import styles from "./TilfojStuderendePage.module.css";
+import styles from "../styles/TilfojStuderendePage.module.css";
 
 const TilfojStuderendePage = () => {
 	const [exams, setExams] = useState<Exam[]>([]);

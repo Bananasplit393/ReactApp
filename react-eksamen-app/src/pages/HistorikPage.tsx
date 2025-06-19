@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import type { Exam, Student } from "../types/data";
 import { fetchAllData } from "../api/examApi";
-import styles from "./HistorikPage.module.css";
+import styles from "../styles/HistorikPage.module.css";
 
 const HistorikPage = () => {
 	const [exams, setExams] = useState<Exam[]>([]);

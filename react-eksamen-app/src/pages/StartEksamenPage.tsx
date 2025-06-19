@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import type { Exam, Student } from "../types/data";
 import { fetchAllData, updateStudent } from "../api/examApi";
-import styles from "./StartEksamenPage.module.css";
+import styles from "../styles/StartEksamenPage.module.css";
 
 type ExamStatus =
 	| "waiting"

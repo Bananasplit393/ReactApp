@@ -17,5 +17,5 @@ export interface Student {
 	questionNo?: number;
 	actualExamDurationMinutes?: number;
 	notes?: string;
-	grade?: string; // Karakter kan være '7', '10', '12', 'IB' etc.
+	grade?: string;
 }
